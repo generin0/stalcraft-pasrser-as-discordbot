@@ -71,4 +71,4 @@ async def on_message(message):
         stats = character_stats(nickname)
         await message.channel.send(f"**Статистика для {nickname}:**\n```{stats}```")
 
-client.run()
+client.run('YOUR TOKEN GOES HERE')
