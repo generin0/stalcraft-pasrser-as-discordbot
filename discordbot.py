@@ -63,7 +63,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith('!stats'):
-        nickname = message.content[len('!stats '):].strip()  # Get nickname after the command
+        nickname = message.content[len('!stats '):].strip()
         if not nickname:
             await message.channel.send("Не верный формат, попробуйте так - > (`!stats никнейм`).")
             return
